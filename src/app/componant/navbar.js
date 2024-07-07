@@ -217,8 +217,9 @@ const[proj,setProj]=useState(true)
 
 {skill?<><h5 class="mb-2 text-3xl font-bold tracking-tight text-white dark:text-gray mt-5 flex items-center "><BsFire/>Skills</h5>
 { <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
-       {skills.map((data) => (
-            <Cards name={data.Pname} desc={data.desc} image={data.image} />
+       {skills.map((data,index) => (
+          <div key={index}>
+            <Cards name={data.Pname} desc={data.desc} image={data.image} /></div>
           ))}
 
 </div> }</>:null
@@ -228,8 +229,9 @@ const[proj,setProj]=useState(true)
 
 {proj?<><h5 class="mb-2 text-3xl font-bold tracking-tight text-white dark:text-gray mt-5 flex items-center "><VscProject />Projects</h5>
 { <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
-           {project.map((data) => (
-            <Cards name={data.Pname} desc={data.desc} image={data.image} />
+           {project.map((data,index) => (
+            <div key={index}>
+            <Cards name={data.Pname} desc={data.desc} image={data.image} /></div>
           ))}
 
 </div> }</>:null
