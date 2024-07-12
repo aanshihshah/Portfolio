@@ -88,7 +88,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+      <nav className="fixed top-0 z-50 w-full bg-gray-900 border-b border-gray-700 dark:bg-gray-900 dark:border-gray-700">
         <div className="px-3 py-3 lg:px-5 lg:pl-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center justify-start rtl:justify-end">
@@ -117,7 +117,7 @@ export default function Navbar() {
               </button>
               <a href="https://flowbite.com" className="flex ms-2 md:me-24">
                 <img src="/animal-2028258_640.png" className="h-8 me-3" alt="FlowBite Logo" />
-                <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Portfolio</span>
+                <span className="self-center text-xl font-semibold sm:text-2xl text-white whitespace-nowrap dark:text-white">Portfolio</span>
               </a>
             </div>
             <div className="flex items-center">
@@ -193,10 +193,10 @@ export default function Navbar() {
         id="logo-sidebar"
         className={`fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform ${
           isOpen ? '' : '-translate-x-full'
-        } bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-900 dark:border-gray-900`}
+        } bg-gray-900 border-r border-gray-200 sm:translate-x-0 dark:bg-gray-900 dark:border-gray-900`}
         aria-label="Sidebar"
       >
-        <div className="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-900">
+        <div className="h-full px-3 pb-4 overflow-y-auto bg-gray-900 dark:bg-gray-900">
           <ul className="space-y-2 font-medium">
             <li>
               <a
@@ -205,7 +205,7 @@ export default function Navbar() {
                   setProj(true);
                   setSkill(true);
                 }}
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-900 dark:hover:bg-gray-700 group"
               >
                 <MdDashboardCustomize />
                 <span className="ms-3">Dashboard</span>
@@ -218,7 +218,7 @@ export default function Navbar() {
                   setProj(false);
                   setSkill(true);
                 }}
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900 group"
+                className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-900 dark:hover:bg-gray-900 group"
               >
                 <BsFire />
                 <span className="flex-1 ms-3 whitespace-nowrap">Skill</span>
@@ -231,7 +231,7 @@ export default function Navbar() {
                   setSkill(false);
                   setProj(true);
                 }}
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900 group"
+                className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-900 dark:hover:bg-gray-900 group"
               >
                 <VscProject />
                 <span className="flex-1 ms-3 whitespace-nowrap">Project</span>
@@ -240,7 +240,7 @@ export default function Navbar() {
             <li>
               <a
                 href="https://github.com/aanshihshah"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900 group"
+                className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-900 dark:hover:bg-gray-900 group"
               >
                 <FaGithub />
                 <span className="flex-1 ms-3 whitespace-nowrap">GitHub</span>
@@ -249,7 +249,7 @@ export default function Navbar() {
             <li>
               <a
                 href="https://www.linkedin.com/in/aanshi-shah-5a03b4275/"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900 group"
+                className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-900 dark:hover:bg-gray-900 group"
               >
                 <FaLinkedin />
                 <span className="flex-1 ms-3 whitespace-nowrap">LinkDin</span>
@@ -258,7 +258,7 @@ export default function Navbar() {
             <li>
               <a
                 href="https://stackoverflow.com/users/26134469/aanshi-shah"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900 group"
+                className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-900 dark:hover:bg-gray-900 group"
               >
                 <ImStackoverflow />
                 <span className="flex-1 ms-3 whitespace-nowrap">StackOverflow</span>
@@ -267,7 +267,7 @@ export default function Navbar() {
             <li>
               <a
                 href="https://www.instagram.com/_aanshi.s_?igsh=cGY4aXZkZDh3anAx"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900 group"
+                className="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-900 dark:hover:bg-gray-900 group"
               >
                 <FaInstagram />
                 <span className="flex-1 ms-3 whitespace-nowrap">Instragram</span>
@@ -280,12 +280,12 @@ export default function Navbar() {
       <div className="p-4 sm:ml-64 mt-14">
         <a
           href="#"
-          className="flex flex-col items-center bg-white rounded-lg shadow md:flex-row md:max-w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-violet-900 dark:hover:bg-violet-700"
+          className="flex flex-col items-center bg-violet-900 rounded-lg shadow md:flex-row md:max-w-full hover:bg-violet-700 dark:border-gray-700 dark:bg-violet-900 dark:hover:bg-violet-700"
         >
           <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/profile.jpg" alt="" />
           <div className="flex flex-col justify-between p-4 leading-normal">
-            <h4 className="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">Aanshi Shah</h4>
-            <p className="mb-3 font-normal text-gray-50 dark:text-gray-50">
+            <h4 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Aanshi Shah</h4>
+            <p className="mb-3 font-normal text-white dark:text-white">
               I hold a Bachelors degree (BCA) from GLS University, where I studied various programming languages, including C, C++, Python, Java, Joomla, PHP, and database management system.
               Currently, I am pursuing a Masters in Computer Applications (MCA) at LJ University, where I have further expanded my programming skills. I have completed multiple projects in PHP
               and Laravel, including a PHP-based cafe multi-vendor management system named Cafexcel and a Laravel-based book rental system.
